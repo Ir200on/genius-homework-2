@@ -99,9 +99,8 @@ body {
     margin-top: 2px;
 }
 #icons_one:hover {
-        display: inline-block; /* Делаем элемент блочным для правильного отображения */
-        transition: all 3s ease; /* Плавный переход со временем 0.3 секунды и анимацией ease (по умолчанию) */
-      
+    display: inline-block; 
+    transition: all 3s ease; 
 }
 #icons_two {
     cursor: pointer;
@@ -148,6 +147,7 @@ body {
     padding-bottom: 40px;
 }
 .content button{
+    text-decoration: none;
     display: flex;
     padding: 16px 32px;
     align-items: flex-start;
@@ -163,7 +163,12 @@ body {
     font-weight: 600;
     color: #FFF;
 }
+.content button a {
+    text-decoration-line: none;
+    color: #FFF;
+}
 .content button:active {
+    text-decoration: none;
     cursor: pointer;
     font-family: Roboto;
     font-size: 18px;
@@ -171,7 +176,9 @@ body {
     color: var(--beauty-landing-2-c-1);
     background-color: transparent;
     border: 2px solid var(--beauty-landing-22);
-
+}
+.content button a:active {
+    color: var(--beauty-landing-2-c-1);
 }
 .content #par_two {
     padding-left: 11px;
@@ -237,7 +244,7 @@ body {
     width: 499px;
     height: 695px;
     margin-left: 32px;
-    position: relative;
+    /* position: relative; */
 }
 
 #face_before {
@@ -560,6 +567,10 @@ use#icon-Group-339:active {
     font-weight: 600;
     line-height: normal;
 }
+.register button a{
+    text-decoration-line: none;
+    color: #FFF;
+}
 .register button:active {
     cursor: pointer;
     font-family: Roboto;
@@ -568,6 +579,21 @@ use#icon-Group-339:active {
     color: var(--beauty-landing-2-background);
     background-color: transparent;
     border: 2px solid var(--beauty-landing-22);
+}
+.register #name:focus {
+    border: none;
+    color: #FFF;
+    background: #747272;
+}
+.register #phone-number:focus {
+    border: none;
+    color: #FFF;
+    background: #747272;
+}
+.register #email:focus {
+    border: none;
+    color: #FFF;
+    background: #747272;
 }
 .register form p{
     color: var(--beauty-landing-25, #747272);
@@ -632,6 +658,13 @@ use#icon-Group-339:active {
 .info li {
     margin-bottom: 16px;
 }
+.link2 {
+    text-decoration: none;
+    color: var(--beauty-landing-2-background);
+}
+.link2:hover {
+    color: #2B7FFF;
+}
 
 .confidenc {
     position: absolute;
@@ -650,7 +683,36 @@ use#icon-Group-339:active {
 .conf-img {
     position: relative;
     padding-left: 6.2vh;
+    bottom: 0;
 }
+
+
+/* .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal {
+    position: relative;
+    width: 723px;
+    height: 681px;
+    background-color: var(--beauty-landing-2-c-1);
+    border-radius: 48px;
+}
+.backdrop .is-hidden {
+    display: none;
+}
+.modal-btn-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+} */
 
 
   @media screen and (max-width: 900px) {
