@@ -417,6 +417,11 @@ body {
 .slider {
     text-align: center;
     margin-bottom: 32px;
+    
+}
+#slider-img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 
 .slider_img_one{
