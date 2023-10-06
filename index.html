@@ -39,7 +39,7 @@
         <div class="content">
         <p id="par_one">Косметологічна клініка</p>
         <h1>Beauty<br>Zone</h1>
-        <button><a href="index2.html">Замовити дзвінок</a></button>
+        <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
         <p id="par_two">Запишись та отримай безкоштовну<br>консультацію нашого косметолога</p>
         </div>
         <img id="vector" src="img/vector.png" alt="">
@@ -157,7 +157,7 @@
                 <input type="text" id="name" name="name" placeholder="Ваше ім'я та прізвище">
                 <input type="text" id="phone-number" name="phone-number" placeholder="Ваш номер телефону">
                 <input type="email" id="email" name="email" placeholder="Ваша електронна пошта">
-                <button><a href="index2.html">Записатись безкоштовно</a></button>
+                <button>Записатись безкоштовно</button>
                 <p>Натискаючи на кнопку я погоджуюсь <br><span>з політикою конфіденційності</span></p>
                 </form>
                 
@@ -177,10 +177,10 @@
 
     <div class="about_us">
         <ul>
-            <li>Про нас</li>
-            <li>Чому ми</li>
-            <li>Наші процедури</li>
-            <li>Контакти</li>
+            <a href="#About-us"><li>Про нас</li></a>
+            <a href="#Why-we"><li>Чому ми</li></a>
+            <a href="#What-we-do"><li>Наші процедури</li></a>
+            <a href="#Where-find"><li>Контакти</li></a>
         </ul>
     </div>
 
@@ -208,6 +208,31 @@
 
 
 </div>
+
+
+
+<div class="backdrop is-hidden">
+    <div class="modal">
+      <img class="modal-btn-close" src="img2/icon_x.png" alt="">
+      
+      <h1>Замовити дзвінок</h1>
+      <h3>Запишіться <span id="reg">безкоштовно</span><br>
+        та отримайте подарунок</h3>
+
+     <div class="main_register">
+        <form>
+            <input type="text" id="name" name="name" placeholder="Ваше ім'я та прізвище">
+            <input type="text" id="phone-number" name="phone-number" placeholder="Ваш номер телефону">
+            <input type="email" id="email" name="email" placeholder="Ваша електронна пошта">
+            <button>Записатись безкоштовно</button>
+            <p>Натискаючи на кнопку я погоджуюсь <br><span>з політикою конфіденційності</span></p>
+        </form>
+    </div>
+      
+      </div>
+    </div>
+<script src="./js/modal.js"></script>
+
 
 
 </body>
